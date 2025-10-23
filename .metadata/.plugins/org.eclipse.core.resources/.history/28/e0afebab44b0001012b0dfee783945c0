@@ -1,0 +1,23 @@
+package mod1;
+
+import java.util.Scanner;
+
+public class Ej6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Introduce el precio ");
+		int precio = entrada.nextInt();
+		System.out.println("Introduce el precio de venta ");
+		int precioVenta = entrada.nextInt();
+		
+		double descuento = ((precio-precioVenta)/precio)*100;
+		
+		
+
+	}
+
+}
