@@ -10,11 +10,11 @@ public class Ej5 {
 		Scanner entrada = new Scanner(System.in);
 		
 		System.out.println("Introduce el radio: ");
-		int radio = entrada.nextInt();
+		double radio = entrada.nextDouble();
 		
 		double longCircunferencia = 2*Math.PI*radio;
-		double areaCirc = Math.PI*(radio*radio);
-		double volumen = 4/3*Math.PI*(radio*radio*radio);
+		double areaCirc = Math.PI*Math.pow(radio, 2);
+		double volumen = 4/3*Math.PI*Math.pow(radio, 3);
 		
 		System.out.println("La longitud es: " + longCircunferencia);
 		System.out.println("El area es: " + areaCirc);

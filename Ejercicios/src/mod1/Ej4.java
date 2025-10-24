@@ -15,15 +15,11 @@ public class Ej4 {
 		System.out.println("Introduce segundo numeo ");
 		int num2 = entrada.nextInt();
 		
-		int suma = num1 + num2;
-		int resta = num1 - num2;
-		int producto = num1 * num2;
-		int division = num1 / num2;
-		
-		System.out.println("La suma es: " + suma);
-		System.out.println("La resta es: " + resta);
-		System.out.println("El producto es: " + producto);
-		System.out.println("La division es: " + division);
+		System.out.println("La suma es: " + (num1+num2));
+		System.out.println("La suma es: " + (num1-num2));
+		System.out.println("La suma es: " + (num1*num2));
+		System.out.println("La suma es: " + (num1/num2));
+                
 
 	}
 

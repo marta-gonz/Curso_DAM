@@ -18,7 +18,6 @@ public class Ej6 {
 		
 		System.out.println("El descuento es de: " + descuento);
 		
-		
 
 	}
 
