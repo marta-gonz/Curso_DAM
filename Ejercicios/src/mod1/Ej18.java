@@ -1,0 +1,38 @@
+package mod1;
+
+import java.util.Scanner;
+
+public class Ej18 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double horas, salNeto, salBruto, ph;
+		
+		System.out.println("Introduce el salario: ");
+		ph = sc.nextDouble();
+		System.out.println("Introduce las horas trabajadas: ");
+		horas = sc.nextDouble();
+		
+		if (horas<=35) {
+			salBruto = horas * ph;
+		} else {
+			salBruto = 35 * ph + (horas - 35) * ph * 1.5;
+		}
+		
+		if (salBruto <= 500) {
+			salNeto = salBruto;
+		} else if (salBruto <= 900) {
+			salNeto = salBruto - (salBruto - 500) * 0.25;
+		} else {
+			salNeto = salBruto - 400 * 0.25 - (salBruto - 900) * 0.45;
+		}
+		
+		System.out.println("El salario bruto es: " + salBruto);
+		System.out.println("El salario neto es: " + salNeto);
+
+	}
+
+}

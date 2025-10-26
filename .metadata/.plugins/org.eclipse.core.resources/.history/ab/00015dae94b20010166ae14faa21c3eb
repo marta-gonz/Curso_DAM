@@ -1,0 +1,25 @@
+package mod1;
+
+import java.util.Scanner;
+
+public class Ej18 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double horas, salNeto, salBruto, salario;
+		
+		System.out.println("Introduce el salario: ");
+		salario = sc.nextDouble();
+		System.out.println("Introduce las horas trabajadas: ");
+		horas = sc.nextDouble();
+		
+		if (horas<=35) {
+			
+		}
+
+	}
+
+}
