@@ -20,7 +20,7 @@ public class Ej10 {
 		double division = 0;
 		
 		if (num2==0) {
-			System.out.println("No se puede dividir entre 0");
+			System.err.println("No se puede dividir entre 0");
 		} else {
 			division = (double)num1 / num2;
 			System.out.println("La division es: " + division);
