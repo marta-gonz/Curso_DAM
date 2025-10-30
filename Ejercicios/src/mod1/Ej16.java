@@ -14,11 +14,11 @@ public class Ej16 {
 		
 		if (nota>=0 && nota<3) {
 			System.out.println("Muy deficiente");
-		} else if (nota>=3 && nota<5) {
+		} else if (nota<5) {
 			System.out.println("Insuficiente");
-		} else if (nota>=5 && nota<=6) {
+		} else if (nota<=6) {
 			System.out.println("Bien");
-		} else if (nota>6 && nota<9) {
+		} else if (nota<9) {
 			System.out.println("Notable");
 		} else {
 			System.out.println("Sobresaliente");
