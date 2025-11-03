@@ -7,20 +7,49 @@ package mod3;
 
 import java.util.Scanner;
 
-/**
- *
- * @author Marta González
- */
 public class Ej13 {
     public static void main(String[] args) {
-
-        int num;
         
         Scanner sc = new Scanner(System.in);
         
-        System.out.println("Introduce un numero(1-100): ");
-        num = sc.nextInt();
+        int max = 100;
+        int min = 0;
+        int num = 50;
+        char respuesta;
+        boolean seguir = true;
         
+        System.out.println("Piensa en un número entre 0 y 100.");
+        System.out.println("Responde con: '>' si tu número es mayor, '<' si es menor, '=' si lo adiviné.");
         
+        while (seguir) {
+            System.out.println("¿El número es " + num + "?");
+            respuesta = sc.next().charAt(0); // lee el primer carácter que el usuario introduce
+            
+            switch (respuesta) {
+                case '<':
+                    max = num;
+                    break;
+                case '>':
+                    min = num;
+                    break;
+                case '=':
+                    seguir = false;
+                    System.out.println("¡He adivinado tu número!");
+                    break;
+                default:
+                    System.out.println("Respuesta no válida. Usa '>', '<' o '='.");
+            }
+            
+            if (seguir) {
+                if (num == 99) {
+                    num = 100;
+                } else {
+                    num = (max + min) / 2;
+                }
+            }
+        }
+        
+        sc.close();
     }
 }
+
