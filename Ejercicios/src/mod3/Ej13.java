@@ -23,7 +23,8 @@ public class Ej13 {
         
         while (seguir) {
             System.out.println("¿El número es " + num + "?");
-            respuesta = sc.next().charAt(0); // lee el primer carácter que el usuario introduce
+            respuesta = sc.next().charAt(0); 
+            
             
             switch (respuesta) {
                 case '<':
