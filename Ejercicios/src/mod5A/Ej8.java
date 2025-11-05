@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package mod3;
+package mod5A;
 
 import java.util.Scanner;
 
@@ -11,21 +11,29 @@ import java.util.Scanner;
  *
  * @author Marta González
  */
-public class Ej6 {
+public class Ej8 {
     public static void main(String[] args) {
 
+        
+        int num, neg, pos;
+        
         Scanner sc = new Scanner(System.in);
-        int num, neg;
         neg = 0;
-        for (int i=0; i<=10; i++) {
+        pos = 0;
+        num = 1;
+        
+        while (num!=0) {
             System.out.println("Introduce un numero");
             num = sc.nextInt();
             
-            if (num < 0) {
-                neg +=1;
+            if (num<0) {
+                neg+=1;
+            } else {
+                pos +=1;
             }
+            
+        System.out.println("Numeros negativos: " + neg);
+        System.out.println("Numeros positivos: " + pos);
         }
-        System.out.println("Has introducido " + neg + " numeros negativos");
-        
     }
 }

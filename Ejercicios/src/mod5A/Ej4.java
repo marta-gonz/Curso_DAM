@@ -1,4 +1,4 @@
-package mod3;
+package mod5A;
 
 import java.util.Scanner;
 

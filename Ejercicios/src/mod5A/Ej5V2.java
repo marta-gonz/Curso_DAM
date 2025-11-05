@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package mod3;
+package mod5A;
 
 import java.util.Scanner;
 
@@ -11,24 +11,34 @@ import java.util.Scanner;
  *
  * @author Marta González
  */
-public class Ej5 {
+public class Ej5V2 {
     public static void main(String[] args) {
 
-        int num1, num2, factorial;
+        int num,  factorial;
+        int i = 2;
+        
         Scanner sc = new Scanner(System.in);
         
+        do {
         System.out.println("Escribe un numero");
-        num1 = sc.nextInt();
+        num = sc.nextInt();
+        } while (num <0);
         
-        num2 = num1;
+            
+        
         factorial =1;
         
-        while (num2>1) {
-            factorial = factorial * num2;
-            num2 = num2 - 1;
+        if (num==0) {
+            factorial=1;
+        } else {
+          while (i<=num) {
+            factorial = factorial * i;
+            i++;
+        }  
         }
         
-        System.out.println("El factorial de " + num1 + " es " + factorial);
         
+        
+        System.out.println("El factorial de " + num + " es " + factorial);
     }
 }
