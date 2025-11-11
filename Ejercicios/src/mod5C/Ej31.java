@@ -20,10 +20,29 @@ de esos números.
 public class Ej31 {
     public static void main(String[] args) {
 
-        int max, min, media;
-        for (int i=1; i <= 50; i++) {
-            int num = (int)(Math.random()*200);
-            System.out.print(num + " ");
+        int max=100;
+        int min=199;
+        int suma=0;
+        int num=0;
+        int media;
+        
+        for (int i=0; i < 50; i++) {
+            num = 100+(int)(Math.random()*100);
+            
+            suma +=num;
+            
+            if (num<min) {
+                min=num;
+            }
+            
+            if (num>max) {
+                max=num;
+            }
+            
         }
+        media = suma/50;
+        System.out.println("El minimo es: " + min);
+        System.out.println("El maximo es: "  + max);
+        System.out.println("La media es: " + media);
     } //main
 } //class
