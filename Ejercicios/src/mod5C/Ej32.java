@@ -8,7 +8,7 @@ package mod5C;
 import java.util.Scanner;
 
 
-/* -----------------T-MOD-Ej------------------*/
+/* -----------------T2-MOD5-Ej32------------------*/
 /*Realiza un programa que pinte por pantalla diez líneas formadas por caracteres. 
 El carácter con el que se pinta cada línea se elige de forma aleatoria entre uno 
 de los siguientes: *, -, =, ., |, @. Las líneas deben tener una longitud 

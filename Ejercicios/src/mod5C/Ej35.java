@@ -8,19 +8,14 @@ package mod5C;
 import java.util.Scanner;
 
 
-/* -----------------T2-MOD5-Ej25------------------*/
-/*Escribe un programa que lea un número n e imprima una pirámide de números 
-con n filas como en la siguiente figura:
-      1
-     121
-    12321
-   1234321
-*/
+/* -----------------T2-MOD5-Ej35------------------*/
+/*Escribe un programa que diga cuántos dígitos pares y cuántos dígitos impares
+hay dentro de un número.*/
 /**
  *
  * @author Marta González
  */
-public class Ej25 {
+public class Ej35 {
     public static void main(String[] args) {
 
     } //main

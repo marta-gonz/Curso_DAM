@@ -9,7 +9,8 @@ import java.util.Scanner;
 
 
 /* -----------------T2-MOD5-Ej30------------------*/
-/*Muestra 20 números enteros aleatorios entre 0 y 10 (ambos incluidos) separados por espacios.
+/*Muestra 20 números enteros aleatorios entre 0 y 10 (ambos incluidos) 
+separados por espacios.
 */
 /**
  *

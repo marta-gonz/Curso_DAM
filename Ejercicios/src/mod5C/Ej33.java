@@ -8,7 +8,7 @@ package mod5C;
 import java.util.Scanner;
 
 
-/* -----------------T-MOD-Ej------------------*/
+/* -----------------T2-MOD5-Ej33------------------*/
 /*Escribe un programa que muestre 20 notas generadas al azar. 
 Las notas deben aparecer de la forma: suspenso, suficiente, bien, notable o 
 sobresaliente. Al final aparecerá el número de suspensos, el número de 

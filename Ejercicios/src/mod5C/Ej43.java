@@ -8,19 +8,15 @@ package mod5C;
 import java.util.Scanner;
 
 
-/* -----------------T2-MOD5-Ej25------------------*/
-/*Escribe un programa que lea un número n e imprima una pirámide de números 
-con n filas como en la siguiente figura:
-      1
-     121
-    12321
-   1234321
-*/
+/* -----------------T2-MOD5-Ej43------------------*/
+/*Igual que el anterior pero con el número 7. Un número es divisible por 7 si 
+la diferencia  entre el número sin su cifra de las unidades y el doble de esa 
+cifra de las unidades resulta en 0 o un múltiplo de 7. */
 /**
  *
  * @author Marta González
  */
-public class Ej25 {
+public class Ej43 {
     public static void main(String[] args) {
 
     } //main

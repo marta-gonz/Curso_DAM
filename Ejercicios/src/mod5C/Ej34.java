@@ -8,8 +8,9 @@ package mod5C;
 import java.util.Scanner;
 
 
-/* -----------------T-MOD-Ej------------------*/
-/**/
+/* -----------------T2-MOD5-Ej34------------------*/
+/*Escribe un programa que diga si un número introducido por teclado es o 
+no capicúa. Los números capicúa se leen igual hacia delante y hacia atrás.*/
 /**
  *
  * @author Marta González
