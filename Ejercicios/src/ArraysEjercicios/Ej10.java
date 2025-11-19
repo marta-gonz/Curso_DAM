@@ -4,12 +4,18 @@ import java.util.Scanner;
 
 public class Ej10 {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
+        /* -----------------T3-MOD-Ej2------------------*/
+        /*Crea un programa que pida diez números reales por teclado, los almacene en 
+        un array, y luego muestre la suma de todos los valores.*/
+        /**
+         *
+         * @author Marta González
+         */
+	Scanner sc = new Scanner(System.in);
 		
 		
-	}
+    }
 
 }

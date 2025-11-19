@@ -5,6 +5,7 @@
 
 package ArraysEjercicios;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 
@@ -19,10 +20,11 @@ public class Ej2 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int suma=0;
+        double suma=0;
         
         System.out.println("Introduce 10 numeros: ");
-        int[] numeros = new int[10];
+        double[] numeros = new double[10];
+        sc.useLocale(Locale.US);
         
         for (int i = 0; i < numeros.length; i++) {
             numeros[i] = sc.nextInt();

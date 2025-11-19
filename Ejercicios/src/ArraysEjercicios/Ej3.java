@@ -30,11 +30,24 @@ public class Ej3 {
             numeros[i] = sc.nextInt();
         }
         
-        for (int i = 0; i < numeros.length; i++) {
+        max = numeros[0];
+        min = numeros[0];
+        for (int i = 0; i < numeros.length; i++) {    
+            
             if (numeros[i] > max) {
+                max = numeros[i];
             }
             
+            if (numeros[i] < min) {
+                min = numeros [i];
+                
+                
+            }
+            
+            
         }
+        System.out.println("El maximo es: " + max);
+        System.out.println("El minimo es: " + min);
         
         
         

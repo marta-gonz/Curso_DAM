@@ -5,7 +5,7 @@
 
 package ArraysEjercicios;
 
-import java.util.Scanner;
+import java.util.*;
 
 
 /* -----------------T3-MOD-Ej1------------------*/
@@ -22,11 +22,21 @@ public class EJ1 {
         
         System.out.println("Introduce 10 numeros: ");
         
+        boolean fallo = false;
         int[] numeros = new int[10];
         
         for (int i = 0; i < numeros.length; i++) {
-            numeros[i] = sc.nextInt();
+            do { 
+                
+                try {
+                    numeros[i] = sc.nextInt();
+                }  catch (InputMismatchException e){
+                    System.out.println("Dato incorrecto");
+                    sc.nextLine();
+                }
+            } while (fallo);
         }
+        
         for (int i = 0; i < numeros.length; i++) {
             System.out.println("Posicion " + i + ": " + numeros[i]);    
         }
