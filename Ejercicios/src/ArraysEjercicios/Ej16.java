@@ -5,7 +5,7 @@
 
 package ArraysEjercicios;
 
-import java.util.Scanner;
+import java.util.*;
 
 
 /* -----------------T3-MOD-Ej16------------------*/
@@ -19,14 +19,17 @@ muestre por pantalla. En esta ocasión has de utilizar Arrays.fill()*/
 public class Ej16 {
     public static void main(String[] args) {
 
-        int tam=0;
+        int[] vector = new int[55];
+        int n=0;
         
-        for (int i = 0; i < 10; i++) {
-            tam = tam +i;
+        for (int i = 1; i < 10; i++) {
+            Arrays.fill(vector, n, i+n, i);
+            n+=i;
         }
         
-        int[] vector = new int[tam];
-        vector[0] = 1;
+        for (int i = 0; i < vector.length; i++) {
+            System.out.print(vector[i]+" ");
+        }
         
         
     } //main
