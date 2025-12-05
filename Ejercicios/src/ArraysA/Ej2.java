@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package ArraysEjercicios;
+package ArraysA;
 
 import java.util.Locale;
 import java.util.Scanner;

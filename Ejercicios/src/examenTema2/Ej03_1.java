@@ -14,7 +14,7 @@ import java.util.*;
  *
  * @author Marta González
  */
-public class Ej03 {
+public class Ej03_1 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -22,7 +22,7 @@ public class Ej03 {
         //Creamos las variables que vamos a utilizar
         int altura = 0;
         int blancos =1;
-        
+        int asteriscos = altura-1;
         
         //Con un bucle repetimos que introduzca la altura hasta que sea mayor que 5
         do {
@@ -38,7 +38,7 @@ public class Ej03 {
         } while (altura < 5);
         
         
-        int asteriscos = altura-1;
+        
         //Bucle para dibujar solo la primera linea
         for (int l = 0; l < altura; l++) {
                 System.out.print("*");

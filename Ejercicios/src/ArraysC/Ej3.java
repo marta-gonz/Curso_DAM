@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package ArraysMatricesEjercicios;
+package ArraysC;
 
 import java.util.Scanner;
 
@@ -34,6 +34,11 @@ public class Ej3 {
         
         int matriz [][] = new int [filas][columnas];
         
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[0].length; j++) {
+                
+            }
+        }
         
     } //main
 } //class
