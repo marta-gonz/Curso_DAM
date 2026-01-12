@@ -23,5 +23,43 @@ con n filas como en la siguiente figura:
 public class Ej25 {
     public static void main(String[] args) {
 
+    	Scanner sc = new Scanner(System.in);
+    	
+    	int altura, digito;
+    	int blancos;
+    	
+    	System.out.println("Introduzca el numero de filas: ");
+    	altura = sc.nextInt();
+    	
+    	blancos = altura;
+    	digito = 1;
+    	
+    	
+    	for (int i = 1; i <= altura; i++) {
+			
+    		//Blancos
+    		for (int j = 1; j <= blancos ; j++) {
+				System.out.print(" ");
+			}
+    		
+    		//Digitos
+    		int retorno = i;
+    		for (int j = 1; j <= digito; j++) {
+    			if (j<=i) {
+    				System.out.print(j);
+    			} else {
+    				retorno--;
+    				System.out.print(retorno);
+    			}    			
+			}
+
+			System.out.println("");
+			blancos--;
+			digito+=2;
+		}
+    	
+    	
+    	
+    	
     } //main
 } //class

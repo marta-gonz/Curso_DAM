@@ -17,11 +17,22 @@ luego muestre ese número al revés.*/
  */
 public class Ej26 {
     public static void main(String[] args) {
-
+    	
+    	int num;
+    	int copia;
+    	int alreves=0;
+    	
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce un numero: ");
-        int num = sc.nextInt();
+        num = sc.nextInt();
         
+        copia=num;
+        
+        while (copia>0) {
+			alreves= (alreves*10)+(copia%10);
+			copia/=10;
+		}
+        System.out.println(alreves);
         
     } //main
 } //class

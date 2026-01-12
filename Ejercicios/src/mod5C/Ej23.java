@@ -5,6 +5,7 @@
 
 package mod5C;
 
+import java.util.Iterator;
 import java.util.Scanner;
 
 
@@ -18,6 +19,39 @@ pantalla su pirámide hueca.*/
 public class Ej23 {
     public static void main(String[] args) {
 
+        int longitud;
         
+         Scanner sc = new Scanner(System.in);
+         
+         System.out.println("Introduce la longitud: ");
+         longitud = sc.nextInt();
+         
+         int blancos = longitud -1;
+         int asteriscos = 1;
+         
+         for (int i = 0; i < longitud-1; i++) {
+			
+        	 //Blancos
+        	 for (int j = 0; j < blancos; j++) {
+				System.out.print(" ");
+			}
+        	 
+        	 //Asteriscos
+        	 for (int j = 1; j <= asteriscos; j++) {
+				if (j==1 || j==asteriscos) {
+					System.out.print("*");
+				} else {
+					System.out.print(" ");
+				}
+				
+			}
+        	 System.out.println("");
+        	 
+        	 blancos--;
+        	 asteriscos+=2;
+		}
+         for (int i = 0; i < asteriscos; i++) {
+			System.out.print("*");
+		}
     } //main
 } //class

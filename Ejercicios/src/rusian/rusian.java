@@ -1,27 +1,88 @@
 package rusian;
 
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class rusian {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Scanner entrada = new Scanner(System.in);
-		
-		System.out.println("Introduce un numero: ");
-		int num1 = entrada.nextInt();
-		System.out.println("Introduce un numero: ");
-		int num2 = entrada.nextInt();
-		
-		if (num1 > num2) {
-			System.out.println(num1 + " es mayor");
-		} else if (num2 > num1) {
-			System.out.println(num2 + "es mayor");
-		} else {
-			System.out.println("Son iguales");
-		}
-		
+		List<String> nombres = Arrays.asList(
+                "Ensalada mediterránea",
+                "Tostadas con aguacate",
+                "Crema de calabaza",
+                "Pasta integral",
+                "Salmón al horno",
+                "Smoothie verde",
+                "Omelette de verduras"
+        );
+
+        List<Integer> calorias = Arrays.asList(
+                180, 240, 120, 520, 430, 95, 210
+        );
+
+        int limiteMax = 200;
+
+        List<String> bajasEnCalorias = recetasBajas(nombres, calorias, limiteMax);
+
+        String menosCalorica = recetaMenosCalorica(nombres, calorias);
+
+        boolean todasCumplen = todasBajoLimite(calorias, limiteMax);
+
+        double promedio = promedioCalorias(calorias);
+
+        System.out.println("Recetas bajas en calorías:");
+        for (String r : bajasEnCalorias) {
+            System.out.println(" " + r);
+        }
+
+        System.out.println("La receta menos calórica es:");
+        System.out.println(menosCalorica);
+
+        System.out.println("¿Todas las recetas cumplen el límite de " + limiteMax + " calorías?");
+        System.out.println(todasCumplen);
+
+        System.out.println("El promedio de calorías es: " + (int) promedio);
+    }
+
+    public static List<String> recetasBajas(List<String> nombres, List<Integer> calorias, int limite) {
+        List<String> resultado = new ArrayList<>();
+
+        for (int i = 0; i < nombres.size(); i++) {
+            if (calorias.get(i) <= limite) {
+                resultado.add(nombres.get(i));
+            }
+        }
+        return resultado;
+    }
+
+    public static String recetaMenosCalorica(List<String> nombres, List<Integer> calorias) {
+        int minIndex = 0;
+
+        for (int i = 1; i < calorias.size(); i++) {
+            if (calorias.get(i) < calorias.get(minIndex)) {
+                minIndex = i;
+            }
+        }
+        return nombres.get(minIndex);
+    }
+
+    public static boolean todasBajoLimite(List<Integer> calorias, int limite) {
+        for (int cal : calorias) {
+            if (cal > limite) return false;
+        }
+        return true;
+    }
+
+    public static double promedioCalorias(List<Integer> calorias) {
+        int suma = 0;
+
+        for (int cal : calorias) {
+            suma += cal;
+        }
+        return (double) suma / calorias.size();
 	}
 
 }
