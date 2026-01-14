@@ -16,9 +16,23 @@ Se debe solicitar la cantidad sin descuento y la cantidad con el descuento aplic
 crear una función a la que le pasemos ambos valores y nos devuelva el descuento.*/
 public class Ej13 {
     
+    public static double descuento(double cantidadSin, double cantidadCon) {
+        double descuento;
+        descuento = cantidadSin - cantidadCon;
+        return (descuento/cantidadSin)*100;
+    }
     
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double cantidadSin, cantidadCon;
         
+        System.out.println("Introduce el el precio sin descuento: ");
+        cantidadSin = sc.nextDouble();
+        System.out.println("Introduce el descuento: ");
+        cantidadCon = sc.nextDouble();
+        
+        System.out.println(descuento(cantidadSin, cantidadCon));
+
     }
 }
 

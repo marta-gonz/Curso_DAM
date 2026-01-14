@@ -45,8 +45,25 @@ public class Main {
         p2.edad = sc.nextInt();
         
         // Calcular si es mayor de edad
+        //“Azucena Luján García con DNI … es / no es mayor de edad”.
         
+        String cadena1 = p1.nombre + " " + p1.apellidos + " con " + p1.dni;
+        String cadena2 = p2.nombre + " " + p2.apellidos + " con " + p2.dni;
        
+        if (p1.edad >= 18) {
+            cadena1 += " es mayor de edad";
+        } else {
+            cadena1 += " no es mayor de edad";
+        }
+        
+        if (p2.edad >= 18) {
+            cadena2 += " es mayor de edad";
+        } else {
+            cadena2 += " no es mayor de edad";
+        }
+        
+        System.out.println(cadena1);
+        System.out.println(cadena2);
         
     } //main
 } //class
