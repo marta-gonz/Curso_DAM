@@ -18,36 +18,10 @@ public class Main {
     public static void main(String[] args) {
         
         //Instanciar los objetos
-        Persona p1 = new Persona();
-        Persona p2 = new Persona();
-        
-        //Perdir por teclado datos
-        Scanner sc = new Scanner(System.in);
-        
-        System.out.println("DATOS PERSONA 1");
-        System.out.println("Introduce el DNI");
-        p1.dni = sc.nextLine();
-        System.out.println("Introduce el nombre");
-        p1.nombre = sc.nextLine();
-        System.out.println("Introduce el apellido");
-        p1.apellidos = sc.nextLine();
-        System.out.println("Introduce la edad");
-        p1.edad = sc.nextInt();
-        
-        sc.nextLine();
-        
-        System.out.println("DATOS PERSONA 2");
-        System.out.println("Introduce el DNI");
-        p2.dni = sc.nextLine();
-        System.out.println("Introduce el nombre");
-        p2.nombre = sc.nextLine();
-        System.out.println("Introduce el apellido");
-        p2.apellidos = sc.nextLine();
-        System.out.println("Introduce la edad");
-        p2.edad = sc.nextInt();
+        Persona p1 = new Persona("123", "Marta", "Gonzalez", 18);
+        Persona p2 = new Persona("321", "Maria", "Bermudez", 15);
         
         // Calcular si es mayor de edad
-        //“Azucena Luján García con DNI … es / no es mayor de edad”.
         
         String cadena1 = p1.nombre + " " + p1.apellidos + " con dni " + p1.dni;
         String cadena2 = p2.nombre + " " + p2.apellidos + " con dni " + p2.dni;
