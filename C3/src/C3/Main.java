@@ -20,6 +20,12 @@ public class Main {
         Rectangulo r1 = new Rectangulo(0,5,0,5);
         Rectangulo r2 = new Rectangulo(7,10,2,3);
 
+        //RECTANGULO 3
+        r1.setX2(5);
+        r1.setX1(3);
+        r1.setY2(8);
+        r1.setY1(6);
+        
                 
         //Calcular perimetro y area
         int alto1, ancho1;
@@ -38,7 +44,7 @@ public class Main {
         perimetro2 = (ancho2+alto2)*2;
         area2 = ancho2*alto2;
         
-        //RECTANGULO 3
+        
 
         
         // Mostrar coodenadas, perimetro y area

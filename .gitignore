@@ -35,6 +35,7 @@ replay_pid*
 /B1/build/
 /B2/nbproject/private/
 /B2/build/
+<<<<<<< Updated upstream
 /B2/dist/
 /B3/nbproject/private/
 /B4/nbproject/private/
@@ -45,3 +46,16 @@ replay_pid*
 /C2/build/
 /C3/nbproject/private/
 /C3/build/
+=======
+>>>>>>> Stashed changes
+/C4/nbproject/private/
+/D1/nbproject/private/
+/DawBank/nbproject/private/
+/CP4-Texto/nbproject/private/
+/cp3/nbproject/private/
+/Ejercicios_T4/nbproject/private/
+/Recursividad/nbproject/private/
+/ArrayListEj1/nbproject/private/
+/ArrayListEj1/build/
+/EJ2_Astros/nbproject/private/
+/EJ3_Mascotas/nbproject/private/
